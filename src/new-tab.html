@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>New Tab</title>
+</head>
+<style>
+html, body { width: 100%; height: 100% }
+body {
+  background: #0E2656;
+	background-image: url('/src/assets/motto.png');
+	background-position: center center;
+	background-size: 60%;
+	background-repeat: no-repeat;
+}
+#background {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+</style>
+<body>
+	<svg id="background" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <g fill="rgba(255,255,255,0.05)">
+      <path d="M0,0 L100,0 L0,100 L100,100 Z"></path>
+    </g>
+  </svg>
+</body>
+</html>
