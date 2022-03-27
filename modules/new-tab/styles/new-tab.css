@@ -1,0 +1,21 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: #0E2656;
+  background-image: url('../assets/learn-change.png');
+  background-position: center center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+}
+
+#background {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

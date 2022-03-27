@@ -1,5 +1,5 @@
-chrome.runtime.onInstalled.addListener(function () {
-//  chrome.tabs.create({ active: true })
+chrome.runtime.onInstalled.addListener(() => {
+  chrome.tabs.create({ active: true })
 
   chrome.identity.getProfileUserInfo(about => {
     chrome.notifications.create(
@@ -12,5 +12,4 @@ chrome.runtime.onInstalled.addListener(function () {
       }
     )
   })
-
 })

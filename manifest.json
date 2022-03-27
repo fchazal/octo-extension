@@ -20,8 +20,8 @@
 		"identity.email",
 		"notifications"
 	],
-	"chrome_ul_overrides": {
-		"newtab": "/modules/new-tab/index.html"
+	"chrome_url_overrides": {
+		"newtab": "modules/new-tab/index.html"
 	},
 	"background": {
 		"scripts": [
