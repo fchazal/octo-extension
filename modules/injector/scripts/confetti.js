@@ -130,6 +130,5 @@ var removeConfetti; //call to stop the confetti animation and remove all confett
 })();
 
 document.addEventListener('DOMContentLoaded', () => {
-	console.log("hello")
-	startConfetti()
+	//startConfetti()
 })
