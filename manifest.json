@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "OCTO Technology",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"author": "François Chazal - FRC",
 	"description": "There is a better way",
 	"homepage_url": "https://www.octo.com/",
@@ -13,15 +13,16 @@
 	},
 	"browser_action": {
 		"default_title": "OCTO Technology",
-		"default_popup": ""
+		"default_popup": "/modules/popup/index.html"
 	},
 	"permissions": [
+		"storage",
 		"identity",
 		"identity.email",
 		"notifications"
 	],
 	"chrome_url_overrides": {
-		"newtab": "modules/new-tab/index.html"
+		"newtab": "/modules/new-tab/index.html"
 	},
 	"background": {
 		"scripts": [
@@ -41,6 +42,8 @@
 		}
 	],
 	"web_accessible_resources": [
-		"/modules/injector/assets/google-logo.png"
+		"/modules/injector/assets/logo-full.png",
+		"/modules/injector/assets/logo-fun.png",
+		"/modules/injector/assets/logo-small.png"
 	]
 }
