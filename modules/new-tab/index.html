@@ -1,27 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  
-  <title>New Tab</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>New Tab</title>
 
-  <link href="styles/new-tab.css" rel="stylesheet">
+	<link href="/assets/octo.css" rel="stylesheet">
+	<link href="styles/new-tab.css" rel="stylesheet">
+	<link href="styles/customize.css" rel="stylesheet">
 </head>
 
-<link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet">
-
 <body>
-  <svg id="background" viewBox="0 0 100 100" preserveAspectRatio="none">
-    <g fill="rgba(255,255,255,0.05)">
-      <path d="M0,0 L100,0 L0,100 L100,100 Z"></path>
-    </g>
-  </svg>
+	<svg id="background" viewBox="0 0 100 100" preserveAspectRatio="none">
+		<path id="cross" d="M0,0 L100,0 L0,100 L100,100 Z"></path>
+	</svg>
 
-  <div id="addNote" class="button">+</div>
+	<div id="background" class="motto-4"></div>
+
+	<section style="display: none">
+		<div id="addNote" class="button">+</div>
+
+		<article class="todo">
+			<h2 class="title">TITLE</h2>
+
+			<ul>
+				<li contenteditable="true">item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+				<li>item 4</li>
+				<li contenteditable="true"></li>
+			</ul>
+		</article>
+	</section>
+
+	<section id="customize">
+		<div id="colors" class="drawer left">
+			<ul id="primary-color">
+				<li style="background-color: var(--octo-darkblue-1)"></li>
+				<li style="background-color: var(--octo-lightblue-1)"></li>
+				<li style="background-color: var(--octo-turquoise-1)"></li>
+				<li style="background-color: var(--octo-green-1)"></li>
+				<li style="background-color: var(--octo-yellow-1)"></li>
+				<li style="background-color: var(--octo-orange-1)"></li>
+				<li style="background-color: var(--octo-red-1)"></li>
+				<li style="background-color: var(--octo-purple-1)"></li>
+			</ul>
+		</div>
+
+		<div id="mottos" class="drawer right">
+			<ul>
+				<li class="motto-1"></li>
+				<li class="motto-2"></li>
+				<li class="motto-3"></li>
+				<li class="motto-4"></li>
+				<li class="motto-5"></li>
+				<li class="motto-6"></li>
+				<li class="motto-7"></li>
+				<li class="motto-8"></li>
+				<li class="motto-9"></li>
+				<li class="motto-10"></li>
+			</ul>
+		</div>
+
+		<div id="customizePage" class="button"></div>
+	</section>
 </body>
 
+<script type="module" src="scripts/customize.js"></script>
+
+<!--
 <script type="module" src="scripts/resizedrag.js"></script>
 <script type="module" src="scripts/notes.js"></script>
+-->
 </html>

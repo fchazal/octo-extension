@@ -1,0 +1,84 @@
+:root {
+	--octo-darkblue-1:		#0E2356;
+	--octo-darkblue-2:		#263967;
+	--octo-darkblue-3:		#3E4F78;
+	--octo-darkblue-4:		#566589;
+	--octo-darkblue-5:		#6E7B9A;
+	--octo-darkblue-6:		#8691AA;
+	--octo-darkblue-7:		#9FA7BB;
+	--octo-darkblue-8:		#B7BDCC;
+	--octo-darkblue-9:		#CFD3DD;
+	--octo-darkblue-10:		#DBDEE6;
+	--octo-darkblue-11:		#E7E9EE;
+	--octo-darkblue-12:		#F3F4F7;
+
+	--octo-lightblue-1:		#00A3BE;
+	--octo-lightblue-2:		#19ACC4;
+	--octo-lightblue-3:		#33B5CB;
+	--octo-lightblue-4:		#4CBFD1;
+	--octo-lightblue-5:		#66C8D8;
+	--octo-lightblue-6:		#80D1DE;
+	--octo-lightblue-7:		#99DAE5;
+	--octo-lightblue-8:		#B2E3EB;
+	--octo-lightblue-9:		#CCEDF2;
+	--octo-lightblue-10:	#D9F1F5;
+	--octo-lightblue-11:	#E5F6F8;
+	--octo-lightblue-12:	#F2FAFC;
+
+	--octo-turquoise-1:		#00A795;
+
+	--octo-green-1:				#00AD00;
+
+	--octo-yellow-1:			#FFE300;
+
+	--octo-orange-1:			#FF6200;
+
+	--octo-red-1:					#EE0023;
+
+	--octo-purple-1:			#9A78F0;
+}
+
+.motto-1 	{ background-image: url(/assets/motto/1.svg) 	}
+.motto-2 	{ background-image: url(/assets/motto/2.svg) 	}
+.motto-3 	{ background-image: url(/assets/motto/3.svg) 	}
+.motto-4 	{ background-image: url(/assets/motto/4.svg) 	}
+.motto-5 	{ background-image: url(/assets/motto/5.svg) 	}
+.motto-6 	{ background-image: url(/assets/motto/6.svg) 	}
+.motto-7 	{ background-image: url(/assets/motto/7.svg) 	}
+.motto-8 	{ background-image: url(/assets/motto/8.svg) 	}
+.motto-9 	{ background-image: url(/assets/motto/9.svg) 	}
+.motto-10 { background-image: url(/assets/motto/10.svg) }
+
+
+@font-face {
+  font-family: "OCTO-Century";
+	font-style: normal;
+	font-weight: normal;
+  src: url(font/Century\ Gothic.otf) format("OpenType");
+}
+
+@font-face {
+  font-family: "OCTO-Century";
+	font-style: normal;
+	font-weight: bold;
+  src: url(font/Century\ Gothic\ Bold.otf) format("OpenType");
+}
+
+@font-face {
+  font-family: "OCTO-Century";
+	font-style: italic;
+	font-weight: normal;
+  src: url(font/Century\ Gothic\ Italic.otf) format("OpenType");
+}
+
+@font-face {
+  font-family: "OCTO-Century";
+	font-style: italic;
+	font-weight: bold;
+  src: url(font/Century\ Gothic\ Bold\ Italic.otf) format("OpenType");
+}
+
+body {
+	margin: 0;
+	font-family: "OCTO-Century", sans-serif;
+}

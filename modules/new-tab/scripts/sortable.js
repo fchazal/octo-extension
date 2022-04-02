@@ -1,0 +1,1 @@
+Sortable.create(document.querySelector('ul'))
