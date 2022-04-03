@@ -24,4 +24,4 @@ function createItem(label, id) {
 	})
 }
 
-createItem('Enable custom google theme ?', 'injector')
+createItem('Thème Google personnalisé', 'injector')
