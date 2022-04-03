@@ -57,32 +57,3 @@
 .motto-8 	{ background-image: url(/assets/motto/8.svg) 	}
 .motto-9 	{ background-image: url(/assets/motto/9.svg) 	}
 .motto-10 { background-image: url(/assets/motto/10.svg) }
-
-
-@font-face {
-  font-family: "OCTO-Century";
-	font-style: normal;
-	font-weight: normal;
-  src: url(font/Century\ Gothic.otf) format("OpenType");
-}
-
-@font-face {
-  font-family: "OCTO-Century";
-	font-style: normal;
-	font-weight: bold;
-  src: url(font/Century\ Gothic\ Bold.otf) format("OpenType");
-}
-
-@font-face {
-  font-family: "OCTO-Century";
-	font-style: italic;
-	font-weight: normal;
-  src: url(font/Century\ Gothic\ Italic.otf) format("OpenType");
-}
-
-@font-face {
-  font-family: "OCTO-Century";
-	font-style: italic;
-	font-weight: bold;
-  src: url(font/Century\ Gothic\ Bold\ Italic.otf) format("OpenType");
-}

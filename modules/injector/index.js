@@ -1,10 +1,9 @@
-
 function injectCSS(css) {
 	style = document.createElement('style')
 	style.setAttribute('id', 'custom-style-code')
 	style.setAttribute('type', 'text/css')
 	style.textContent = css
-
+	
 	document.documentElement.appendChild(style)
 }
 
@@ -13,8 +12,10 @@ let host = document.location.host
 // ONLY GOOGLE
 if (host.indexOf('google') != -1) {
 	injectCSS(`
+	@import url(${chrome.runtime.getURL('/assets/octo.css')});
+
 	img.gb_ma {
-		content: url(${chrome.extension.getURL('/modules/injector/assets/logo.png')});
+		content: url(${chrome.runtime.getURL('/modules/injector/assets/logo.png')});
 	}
 
 	::-webkit-scrollbar-thumb {
@@ -189,8 +190,3 @@ chrome.storage.sync.get([ 'accent', 'injector' ], data => {
 
 	}
 })
-
-// ALL PAGES
-injectCSS(`
-@import url(${chrome.extension.getURL('/assets/octo.css')});
-`)

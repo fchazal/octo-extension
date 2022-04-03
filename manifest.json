@@ -1,5 +1,5 @@
 {
-	"manifest_version": 2,
+	"manifest_version": 3,
 	"name": "OCTO Technology",
 	"version": "1.0.0",
 	"author": "François Chazal - FRC",
@@ -11,9 +11,15 @@
 		"48": "/icons/icon_48.png",
 		"128": "/icons/icon_128.png"
 	},
-	"browser_action": {
+	"action": {
 		"default_title": "OCTO Technology",
-		"default_popup": "/modules/popup/index.html"
+		"default_popup": "modules/popup/index.html",
+		"default_icon": {
+			"16": "/icons/icon_16.png",
+			"32": "/icons/icon_32.png",
+			"48": "/icons/icon_48.png",
+			"128": "/icons/icon_128.png"
+		}
 	},
 	"permissions": [
 		"storage",
@@ -25,26 +31,26 @@
 		"newtab": "/modules/new-tab/index.html"
 	},
 	"background": {
-		"scripts": [
-			"/modules/background/index.js"
-		],
-		"persistent": false
+		"service_worker": "/modules/background/index.js"
 	},
 	"content_scripts": [
 		{
 			"all_frames": false,
-			"matches": [ "<all_urls>" ],
+			"run_at": "document_start",
 			"js": [
 				"/modules/injector/index.js"
 			],
-			"run_at": "document_start"
+			"matches": [ "*://*/*" ]
 		}
 	],
-	"web_accessible_resources": [
-		"/assets/octo.css",
-		"/modules/injector/assets/logo.png",
-		"/modules/injector/assets/logo-full.png",
-		"/modules/injector/assets/logo-fun.png",
-		"/modules/injector/assets/logo-small.png"
-	]
+	"web_accessible_resources": [{
+		"resources": [
+			"/assets/octo.css",
+			"/modules/injector/assets/logo.png",
+			"/modules/injector/assets/logo-full.png",
+			"/modules/injector/assets/logo-fun.png",
+			"/modules/injector/assets/logo-small.png"
+		],
+		"matches": [ "*://*/*" ]
+	}]
 }
