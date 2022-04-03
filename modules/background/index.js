@@ -7,7 +7,6 @@ chrome.runtime.onInstalled.addListener(() => {
     fetch(url+'?email='+about.email)
     .then(response => response.json())
     .then(user => {
-      alert(user.length)
 	    chrome.storage.sync.set({ 'user' : user })
 
       chrome.notifications.create(
