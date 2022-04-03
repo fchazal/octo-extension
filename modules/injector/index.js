@@ -42,7 +42,7 @@ if (host.indexOf('google') != -1) {
 
 chrome.storage.sync.get([ 'accent', 'injector' ], data => {
 	if (data['injector']) {
-
+		let accent = data['accent'] || 'darkblue'
 		// ONLY GMAIL
 		if (host == 'mail.google.com') {
 			injectCSS(`
@@ -62,7 +62,7 @@ chrome.storage.sync.get([ 'accent', 'injector' ], data => {
 				margin-top: 2px;
 				background: #fff;
 				border-radius: 15px 0 0 0;
-				outline: 2px solid var(--octo-${data['accent']}-1);
+				outline: 2px solid var(--octo-${accent}-1);
 			}
 			.nH.bkK.nn .y0 {
 				background: transparent;
@@ -71,7 +71,7 @@ chrome.storage.sync.get([ 'accent', 'injector' ], data => {
 				box-shadow: 0 0 4px #0008;
 			}
 			.zA>.PE.PF::before {
-				background-color: var(--octo-${data['accent']}-4);
+				background-color: var(--octo-${accent}-4);
 				width: 5px;
 			}
 
@@ -132,7 +132,7 @@ chrome.storage.sync.get([ 'accent', 'injector' ], data => {
 				margin-top: 2px;
 				background: #fff;
 				border-radius: 15px 0 0 0;
-				outline: 2px solid var(--octo-${data['accent']}-1);
+				outline: 2px solid var(--octo-${accent}-1);
 			}
 
 			.lVcy9.aabwZd .M3pype {
@@ -172,7 +172,7 @@ chrome.storage.sync.get([ 'accent', 'injector' ], data => {
 				margin-top: 2px;
 				background: #fff;
 				border-radius: 15px 0 0 0;
-				outline: 2px solid var(--octo-${data['accent']}-1);
+				outline: 2px solid var(--octo-${accent}-1);
 			}
 
 			#drawerMiniMonthNavigator {

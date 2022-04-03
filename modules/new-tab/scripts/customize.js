@@ -60,7 +60,7 @@ document.querySelector('#customizePage').onclick = () => {
 
 // Set preferences
 chrome.storage.sync.get([ 'accent', 'motto' ], data => {
-	Accents.set(data['accent'])
-	Mottos.set(data['motto'])
+	Accents.set(data['accent'] || 'darkblue')
+	Mottos.set(data['motto'] || 'motto-1')
 })
 	

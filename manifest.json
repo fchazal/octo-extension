@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "OCTO Technology",
-	"version": "0.9.0",
+	"version": "1.0.0",
 	"author": "François Chazal - FRC",
 	"description": "There is a better way",
 	"homepage_url": "https://www.octo.com/",
@@ -35,8 +35,7 @@
 			"all_frames": false,
 			"matches": [ "<all_urls>" ],
 			"js": [
-				"/modules/injector/index.js",
-				"/modules/injector/scripts/confetti.js"
+				"/modules/injector/index.js"
 			],
 			"run_at": "document_start"
 		}
