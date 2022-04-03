@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "OCTO Technology",
-	"version": "0.0.2",
+	"version": "0.9.0",
 	"author": "François Chazal - FRC",
 	"description": "There is a better way",
 	"homepage_url": "https://www.octo.com/",
@@ -42,6 +42,8 @@
 		}
 	],
 	"web_accessible_resources": [
+		"/assets/octo.css",
+		"/modules/injector/assets/logo.png",
 		"/modules/injector/assets/logo-full.png",
 		"/modules/injector/assets/logo-fun.png",
 		"/modules/injector/assets/logo-small.png"

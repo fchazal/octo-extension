@@ -14,7 +14,7 @@ let host = document.location.host
 if (host.indexOf('google') != -1) {
 	injectCSS(`
 	img.gb_ma {
-		content: url(${chrome.extension.getURL('/modules/injector/assets/logo-small.png')});
+		content: url(${chrome.extension.getURL('/modules/injector/assets/logo.png')});
 	}
 
 	::-webkit-scrollbar-thumb {
@@ -40,8 +40,8 @@ if (host.indexOf('google') != -1) {
 	`)
 }
 
-chrome.storage.sync.get(['injector'], result => {
-	if (result['injector']) {
+chrome.storage.sync.get([ 'accent', 'injector' ], data => {
+	if (data['injector']) {
 
 		// ONLY GMAIL
 		if (host == 'mail.google.com') {
@@ -59,12 +59,20 @@ chrome.storage.sync.get(['injector'], result => {
 			}
 			
 			.nH.bkK.nn {
+				margin-top: 2px;
 				background: #fff;
-				border-radius: 15px 15px 0 0;
-				box-shadow: 0 0 5px #0002;
+				border-radius: 15px 0 0 0;
+				outline: 2px solid var(--octo-${data['accent']}-1);
 			}
 			.nH.bkK.nn .y0 {
 				background: transparent;
+			}
+			.btb {
+				box-shadow: 0 0 4px #0008;
+			}
+			.zA>.PE.PF::before {
+				background-color: var(--octo-${data['accent']}-4);
+				width: 5px;
 			}
 
 			.nM .wT .zw {
@@ -95,7 +103,6 @@ chrome.storage.sync.get(['injector'], result => {
 			}
 
 			.ak25Me {
-				z-index: 0 !important;
 				border: none !important;
 			}
 			.a-s-Ba-Ak {
@@ -122,9 +129,10 @@ chrome.storage.sync.get(['injector'], result => {
 			}
 
 			.g3Fmkb {
+				margin-top: 2px;
 				background: #fff;
-				border-radius: 15px 0;
-				box-shadow: 0 0 5px #0002;
+				border-radius: 15px 0 0 0;
+				outline: 2px solid var(--octo-${data['accent']}-1);
 			}
 
 			.lVcy9.aabwZd .M3pype {
@@ -146,10 +154,6 @@ chrome.storage.sync.get(['injector'], result => {
 				background: #fafafa;
 			}
 
-			header#gb {
-				z-index: 0;
-			}
-
 			header#gb::before {
 				content: "";
 				background: #fafafa;
@@ -165,9 +169,10 @@ chrome.storage.sync.get(['injector'], result => {
 			}
 
 			.lYYbjc {
+				margin-top: 2px;
 				background: #fff;
-				border-radius: 15px 0;
-				box-shadow: 0 0 5px #0002;
+				border-radius: 15px 0 0 0;
+				outline: 2px solid var(--octo-${data['accent']}-1);
 			}
 
 			#drawerMiniMonthNavigator {
@@ -187,12 +192,5 @@ chrome.storage.sync.get(['injector'], result => {
 
 // ALL PAGES
 injectCSS(`
-#confetti-canvas	 {
-	position: fixed;
-	z-index: 1999;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	top: 0;
-}
+@import url(${chrome.extension.getURL('/assets/octo.css')});
 `)

@@ -26,16 +26,25 @@
 	--octo-lightblue-12:	#F2FAFC;
 
 	--octo-turquoise-1:		#00A795;
+	--octo-turquoise-2:		#19B0A0;
 
 	--octo-green-1:				#00AD00;
+	--octo-green-2:				#19B519;
 
 	--octo-yellow-1:			#FFE300;
+	--octo-yellow-2:			#FFE619;
+	--octo-yellow-3:			#FFE933;
+	--octo-yellow-4:			#FFEB4C;
+	--octo-yellow-5:			#FFEE66;
 
 	--octo-orange-1:			#FF6200;
+	--octo-orange-2:			#FF7219;
 
 	--octo-red-1:					#EE0023;
+	--octo-red-2:					#F01939;
 
 	--octo-purple-1:			#9A78F0;
+	--octo-purple-2:			#A485F1;
 }
 
 .motto-1 	{ background-image: url(/assets/motto/1.svg) 	}
@@ -76,9 +85,4 @@
 	font-style: italic;
 	font-weight: bold;
   src: url(font/Century\ Gothic\ Bold\ Italic.otf) format("OpenType");
-}
-
-body {
-	margin: 0;
-	font-family: "OCTO-Century", sans-serif;
 }

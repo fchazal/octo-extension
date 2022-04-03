@@ -2,11 +2,7 @@ html, body {
 	margin: 0;
 	width: 100vw;
 	height: 100vh;
-}
-
-body {
-	background-color: #00A3BE;
-	background-color: #0E2656;
+	font-family: "OCTO-Century", sans-serif;
 }
 
 #background {
@@ -17,117 +13,18 @@ body {
 	height: 100vh;
 }
 
-svg#background {
-	fill: var(--octo-darkblue-1);
-
-	#cross {
-		fill: var(--octo-darkblue-2);
-	}
-}
-
 div#background {
 	background-position: center center;
 	background-repeat: no-repeat;
-	background-size: 50%;
+	background-size: 70%;
 }
 
 .button {
+	cursor: pointer;
 	display: block;
-	background-color: #fff2;
-	border: 1px solid #fff;
 	width: 32px;
 	height: 32px;
-	cursor: pointer;
 	border-radius: 20px;
-}
-
-.button#addNote {
-	color: #fff;
-	font-size: 30px;
-	text-align: center;
-	line-height: 25px;
-}
-
-.note {
-	position: fixed;
-	margin: 0;
-	padding: 0;
-	z-index: 98;
-
-	width: 200px;
-	height: 200px;
-
-	line-height: 1.5;
-	
-	font-family: 'Chilanka', cursive;
-	font-size: 16px;
-	color: #222;
-	
-	background-color: #faf4d4;
-	border: none;
-	outline: none;
-	box-shadow: 0 0 5px rgba(#000,0.4);
-	border-radius: 2px 2px 20px 2px;
-}
-
-.todo {
-	background-color: rgba(#fff, 0.9);
-	width: 400px;
-	height: 85vh;
-	margin: auto;
-	border-radius: 10px;
-
-	color: #222;
-	overflow: hidden;
-
-	h2 {
-		margin: 0;
-		padding: 1em 0;
-		font-size: 1.8em;
-		text-align: center;
-	}
-
-	ul {
-		display: block;
-		margin: 0;
-		padding: 0;
-
-		li {
-			position: relative;
-			display: block;
-			list-style: none;
-			padding: 1em 0 1em 3em;
-			border: rgba(#000, 0.1) solid;
-			border-width: 1px 0 0 0;
-			background-color: rgba(#fff, 0.5);
-			outline: none;
-			
-			&::before {
-				content: '';
-				position: absolute;
-				top: 50%;
-				left: 1em;
-				margin-top: -0.7em;
-				display: block;
-				width: 1.4em;
-				height: 1.4em;
-				box-sizing: border-box;
-				border: 2px solid #3E4F78;
-				border-radius: 1em;
-			}
-
-			&:hover::after {
-				content: '';
-				position: absolute;
-				top: 50%;
-				left: 1.35em;
-				margin-top: -0.35em;
-				display: block;
-				width: .75em;
-				height: .75em;
-				background-color:#3E4F78;
-				border-radius: 1em;
-			}
-		}
-	}
+	border: 1px solid #fff;
+	background-color: #fff2;
 }
