@@ -14,7 +14,7 @@ if (host.indexOf('google') != -1) {
 	injectCSS(`
 	@import url(${chrome.runtime.getURL('/assets/octo.css')});
 
-	img.gb_ma {
+	img[src*="logo.gif"] {
 		content: url(${chrome.runtime.getURL('/modules/injector/assets/logo.png')});
 	}
 
